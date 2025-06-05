@@ -21,10 +21,10 @@ Capture live network packets using Wireshark and analyze them to identify basic 
 ## Sample Packet Summary
 | Source IP     | Destination IP | Protocol | Length |
 |---------------|----------------|----------|--------|
-| 192.168.x.x   | 8.8.8.8        | DNS      | 74     |
-| 192.168.x.x   | 142.x.x.x      | TCP      | 66     |
-| 142.x.x.x     | 192.168.x.x    | TCP      | 60     |
-| 192.168.x.x   | 142.x.x.x      | TLS      | 125    |
+| 192.168.1.23   | 8.8.8.8        | DNS      | 74     |
+| 192.168.3.45   | 142.x.x.x      | TCP      | 66     |
+| 142.164.34.12  | 192.168.x.x    | TCP      | 60     |
+| 192.168.1.23   | 142.x.x.x      | TLS      | 125    |
 
 ## Summary
 This task demonstrates the basics of network packet capture and analysis. Wireshark enabled protocol filtering and traffic breakdown which is useful for troubleshooting and learning network behavior.
