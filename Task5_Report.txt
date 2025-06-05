@@ -1,0 +1,32 @@
+Task 5: Capture and Analyze Network Traffic Using Wireshark
+
+Objective:
+To capture live packets from an active network interface, identify basic protocols, and understand traffic flow using Wireshark.
+
+Analyzed PCAP File:
+File: merged.pcap
+
+Protocols Identified:
+1. TCP - Connection-oriented protocol used in web and application communications.
+2. UDP - Lightweight, connectionless protocol used in fast data transfers like DNS.
+3. DNS - Used to resolve domain names into IP addresses.
+4. TLS/HTTPS - Secure communication observed through TLS handshakes.
+5. ICMP - If ping tests were used, ICMP traffic would be visible.
+
+Key Observations:
+- TCP handshakes (SYN, ACK) seen.
+- DNS queries to resolve domain names.
+- TLS handshakes show encrypted HTTPS traffic.
+- Local and public IPs detected.
+
+Sample Packet Summary (First Few Packets):
+Src IP           | Dest IP         | Protocol | Length (bytes)
+---------------------------------------------------------------
+192.168.1.23      | 8.8.8.8         | DNS      | 74
+192.168.3.45      | 142.x.x.x       | TCP      | 66
+142.164.34.12     | 192.168.x.x     | TCP      | 60
+192.168.1.23      | 142.x.x.x       | TLS      | 125
+
+
+Summary:
+Wireshark effectively captured and filtered real-time traffic, providing insight into basic network protocols. This task helps improve packet analysis and network troubleshooting skills.
